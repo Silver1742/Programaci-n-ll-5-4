@@ -1,0 +1,31 @@
+
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+bool esmultiplo3 (int n);
+{
+	bool flag= false;
+	if (n%3=0)
+	{
+		flag=true;
+	}
+	return flag;
+} 
+int main()
+{
+	int num; 
+	string msg="no es multiplo";
+	cout<<"ingrese el numero";
+	cin>>num;
+	
+	if (esmultiplo3 (num)){
+		msg="es multiplo";
+	}
+	cout<<msg<<endl;
+	
+	return 0;
+}
