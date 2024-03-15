@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+#include <math.h>
+
+using namespace std;
+
+int Esmayor(int a = 0, int b = 0, int c = 0)
+{
+	int mayor = 0;
+	if (a > b && a > c)
+	{
+		mayor = a;
+	}
+	if (b > a && b > c)
+	{
+		mayor = b;
+	}
+	if (c > a && c > b)
+	{
+		mayor = c;
+	}
+	return mayor;
+}
+
+int main(int argc, char *argv[])
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	cout << "ingrese los tres numeros";
+	cin >> a >> b >> c;
+	cout << Esmayor(a, b, c) << endl;
+	cout << "es el mayor" << endl;
+	return 0;
+}
