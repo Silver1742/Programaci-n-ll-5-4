@@ -1,1 +1,33 @@
-uuuu
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+#include <math.h>
+
+using namespace std;
+
+int ContarletraA(string f)
+{
+	int contador = 0;
+	char letra = ' ';
+
+	for (int i = 0; i <= f.size(); i++)
+	{
+		if (f[i] == 'a')
+		{
+			contador++;
+		}
+	}
+	return contador;
+}
+int main()
+{
+	string frase;
+	int contador = 0;
+	cout << "ingrese la frase" << endl;
+	getline(cin, frase);
+	contador = ContarletraA(frase);
+	cout << "la catidad de a que hay en la frase son " << contador << endl;
+
+	return 0;
+}
